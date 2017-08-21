@@ -34,7 +34,7 @@
       </div>
 
       <div class="jumbotron">
-        <h1 class="display-3">Create an article</h1>
+        <h1 class="display-3">Editing existing article</h1>
         <% if @article.errors.any? %>
         <p class="lead">The following errors prevented the artile from getting created.</p>
           <ul class="nav nav-pills float-right>
@@ -59,7 +59,7 @@
             <%= f.submit %>
         </p>
       <% end %>
-      <%= link_to "Back to articles", articles_path%>
+            <%= link_to "Back to articles", articles_path%>
         </div>
         </div>
 

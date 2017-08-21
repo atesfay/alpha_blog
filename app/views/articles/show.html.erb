@@ -15,7 +15,6 @@
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/3.3/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
   </head>
-
   <body>
 
     <div class="container">
@@ -43,7 +42,8 @@
           <p>description : <%= @article.description %></p>
         </div>
       </div>
-
+      <%= link_to "Edit this articles", edit_article_path(@article) %>  |  
+      <%= link_to "Back to articles", articles_path%>
       <footer class="footer">
         <p>&copy; Company 2017</p>
       </footer>
